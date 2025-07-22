@@ -1,0 +1,438 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  color-scheme: light dark;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
+.landing-page {
+  width: 100%;
+  /* height: 200vh; */
+  /* background-color: blue; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+  justify-content: flex-start;
+}
+
+.navigation-bar {
+  width: 100%;
+  height: 8vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0 0.2em #000;
+  z-index: 500;
+}
+
+.logo-img {
+  animation: logoAnim 5s infinite;
+}
+
+@keyframes logoAnim {
+  0% {
+    transform: rotate(0%);
+  }
+
+  25% {
+    transform: rotate(45%);
+
+  }
+
+  50% {
+    transform: rotate(90%);
+
+  }
+
+  75% {
+    transform: rotate(180%);
+
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation-menu {
+  width: 80%;
+  height: 80%;
+  /* background-color: blue; */
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navigation-menu ul {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  /* background-color: blue; */
+}
+
+li {
+  list-style: none;
+  font-weight: 550;
+  font-size: small;
+  color: #000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+
+}
+
+.navigation-menu button {
+  width: 10%;
+  height: 70%;
+  background-color: blue;
+  border: none;
+  border-radius: 2em;
+  font-weight: bolder;
+  font-size: small;
+  cursor: pointer;
+  color: #fff;
+}
+
+.hero-section {
+  width: 100%;
+  height: 70vh;
+  background-color: #fff;
+  background-image: linear-gradient(to right, rgba(100, 76, 160, 0.219), rgba(81, 22, 230, 0.493)), url(assets/images/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+
+}
+
+.hero-content h2 {
+  font-weight: bold;
+
+}
+
+.hero-content p {
+  font-size: large;
+  font-family: cursive;
+}
+
+.cards-section {
+  width: 100%;
+  height: 30vh;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.each-card {
+  width: 40%;
+  height: 90%;
+  border-radius: 1em;
+  background-color: rgb(217, 236, 252);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0 0.5em #000;
+}
+
+.each-card h3 {
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+}
+
+.each-card p {
+  font-family: cursive;
+  font-size: small;
+}
+
+.each-card button {
+  width: 30%;
+  height: 20%;
+  background-color: #272b68;
+  border: none;
+  border-radius: 0.5em;
+  font-size: medium;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Jpbs listing */
+.jobs-listing {
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vh;
+  gap: 4vh;
+}
+
+.jobs-container a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+.jobs-listing button {
+  width: 100%;
+  height: 4vh;
+  border: none;
+  border-radius: 0.2em;
+  background-color: rgba(30, 30, 143, 0.89);
+  color: #fff;
+  font-size: small;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+.jobs-container {
+  width: 100%;
+  height: 80%;
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  place-content: center;
+  gap: 2%;
+  padding: 0.5%;
+
+}
+
+.each-job {
+  width: 100%;
+  height: 100%;
+  /* background-color: green; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5vh;
+  border-radius: 0.3em;
+  border: 0.1em solid #d4d2d2;
+  padding: 1%;
+}
+
+.each-job h3 {
+  font-weight: bolder;
+  font-family: cursive;
+  font-size: small;
+
+}
+
+.each-job h5 {
+  font-size: smaller;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.each-job p {
+  font-size: medium;
+  font-weight: lighter;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.less-more-btn:hover {
+  background-color: blue;
+}
+
+.less-more-btn {
+  font-size: large;
+}
+
+.each-job button {
+  width: 70%;
+  height: 4vh;
+  border: none;
+  border-radius: 0.2em;
+  background-color: #000;
+  color: #fff;
+  font-size: small;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+.active {
+  background-color: #000;
+  border-radius: 0.4em;
+  color: #fff;
+  text-decoration: none;
+  padding: 2%;
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inactive {
+  text-decoration: none;
+  color: #000;
+  font-size: medium;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.job-page {
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(239, 248, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+  align-items: center;
+  font-family: cursive;
+  font-weight: lighter;
+  font-size: small;
+}
+
+.title-des-container {
+  width: 65%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5%;
+  background-color: transparent;
+}
+
+.job-tit {
+  width: 100%;
+  height: 20%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 0 0.3em #000;
+  border-radius: 0.2em;
+  padding: 2%;
+}
+
+.jon-des {
+  width: 100%;
+  height: 30%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2%;
+  border-radius: 0.2em;
+  box-shadow: 0 0 0.3em #000;
+
+}
+
+.c-info {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.actual-info {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #fff;
+  box-shadow: 0 0 0.3em #000;
+  padding: 2%;
+  border-radius: 0.2em;
+}
+
+.manageJob {
+  width: 90%;
+  height: 25%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  box-shadow: 0 0 0.3em #000;
+  padding: 2%;
+  border-radius: 0.2em;
+}
+
+.manageJob :first-child {
+  color: orangered;
+  font-size: medium;
+}
+
+.manageJob button {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  width: 80%;
+  height: 30%;
+  border-radius: 1em;
+  font-size: small;
+  font-weight: bold;
+}
+
+.add-job-container {
+  width: 100%;
+  height: 120vh;
+  background-color: rgb(195, 225, 252);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.add-job-container h3 {
+  font-size: large;
+  font-family: cursive;
+}
+
+.add-info-container {
+  width: 50%;
+  background-color: #fff;
+  padding: 2%;
+  box-shadow: 0 0 0.2em #000;
+  height: 90%;
+  border-radius: 0.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  font-family: cursive;
+}
