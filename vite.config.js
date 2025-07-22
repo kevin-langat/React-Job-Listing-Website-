@@ -14,4 +14,5 @@ export default defineConfig({
       },
     },
   },
+  base: '/React-Job-Listing-Website-/',
 });
